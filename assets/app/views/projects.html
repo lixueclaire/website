@@ -40,16 +40,20 @@
 </div>
 
 <div ng-if="showGetStarted" class="empty-state-message empty-state-full-page text-center">
+  <!--
   <h1>Welcome to OpenShift.</h1>
 
   <p>
     OpenShift helps you quickly develop, host, and scale applications.<br>
     <span ng-if="canCreate">Create a project for your application.</span>
   </p>
+  -->
 
   <a ng-if="canCreate" href="createProject" class="btn btn-lg btn-primary">New Project</a>
-
+  
+  <!--
   <p>To learn more, visit the OpenShift <a ng-href="{{'' | helpLink}}">documentation</a>.</p>
+   -->
 
   <p ng-if="canCreate === false">
     <span ng-if="!newProjectMessage">A cluster admin can create a project for you by running the command<br>

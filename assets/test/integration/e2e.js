@@ -27,11 +27,11 @@ describe('', function() {
       }, 3000);
 
       expect(browser.driver.getCurrentUrl()).toMatch(/\/login/);
-      expect(browser.driver.getTitle()).toEqual('Login - OpenShift Origin');
+      expect(browser.driver.getTitle()).toEqual('Login');
 
       h.login(true);
 
-      expect(browser.getTitle()).toEqual("OpenShift Web Console");
+      expect(browser.getTitle()).toEqual("Web Console");
       expect(element(by.css(".navbar-utility .username")).getText()).toEqual("e2e-user");
     });
 
