@@ -6,11 +6,9 @@
     <title>Web Console</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-precomposed.png">
-	-->
     <meta name="application-name" content="OpenShift">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
@@ -35,7 +33,7 @@
   </head>
 <body class="console-os">
     <!-- Add your site or application content here -->
-    <nav class="navbar navbar-default navbar-pf" role="navigation">
+    <nav class="navbar navbar-default navbar-pf" role="navigation" style="background : #446cb3">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span>
@@ -44,16 +42,20 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" id="openshift-logo" href="./">
-          <div id="header-logo"></div>
+			<div id="header-logo"  style="height: 20px">
+				<p>Paladin</p>
+			</div>
         </a>
       </div>
       <div class="collapse navbar-collapse navbar-collapse-1">
         <ul class="nav navbar-nav navbar-utility">
+		  <!--
           <li>
             <a href="http://docs.openshift.org/latest/welcome/index.html">
             <span class="fa fa-files-o fa-fw"></span> Documentation</a>
           </li>
-          <li ng-cloak ng-if="user" class="dropdown">
+		  -->
+          <li ng-cloak ng-if="user" class="dropdown"  style="margin-top: 5px;">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <span class="pficon pficon-user"></span>
               <span class="username">{{user.fullName || user.metadata.name}}</span> <b class="caret"></b>
